@@ -1,0 +1,32 @@
+# Secrets
+.env
+outputs/.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# macOS
+.DS_Store
+.__apm.*
+__MACOSX/
+._*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+outputs/source_code.zip
+
+# Challenge data (too large for repo)
+# Uncomment if you don't want to track datasets:
+# *- train/
+# *- validation/
