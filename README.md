@@ -18,16 +18,16 @@ Detect **fraudulent financial transactions** in a simulated digital metropolis s
 
 ## Architecture
 
-### Python Feature Engineering (90% of detection, 0 LLM cost)
+### Python Feature Engineering
 - **Phishing detection** from SMS/emails via typo-domain patterns (`paypa1`, `amaz0n`, `ub3r`, etc.)
 - **Phishing susceptibility** extraction from user behavioral descriptions
 - **Transaction baseline building** per citizen (recipients, amounts, timing patterns)
 - **Impossible travel detection** comparing GPS pings vs in-person payment locations
 - **Temporal correlation** between phishing events and suspicious transactions
 
-### LLM Agents (borderline cases only)
-- Per-citizen fraud analysis using GPT-4o via OpenRouter
-- Audio transcription using Gemini 2.0 Flash
+### LLM Agents
+- Per-citizen fraud analysis using **GPT-4o** via OpenRouter
+- Audio transcription using **Gemini 2.0 Flash**
 - LangChain + Langfuse for tracing and observability
 
 ## Dataset Included
